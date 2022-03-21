@@ -3,40 +3,34 @@
 
     <body>
         <form method="post" action="/predict">
-            Age: <input  type="number" name="age"></br></br>
-            BusinessTravel:	<input type ="text" name="bt"></br></br>
-            DailyRate:	<input  type="number" name="dr"></br></br>
-            Department:	<input  type="text" name="dept"></br></br>
-            DistanceFromHome: <input  type="number" name="dfh"></br></br>
-            Education: <input  type="number" name="edu"></br></br>
-            EducationField:	<input  type="text" name="eduf"></br></br>
-            EmployeeCount: <input  type="number" name="educ"></br></br>	
-            EmployeeNumber: <input type="number" name="empno"></br></br>	
-            EnvironmentSatisfaction: <input type="number" name="envsat"></br></br>
-            Gender: <input type="text" name="gender"></br></br>
-            HourlyRate: <input type="number" name="hr"></br></br>
-            JobInvolvement: <input type="number" name="jobinv"></br></br>
-            JobLevel: <input type="number" name="joblev"></br></br>
-            JobRole: <input type="text" name="jobrol"></br></br>
-            JobSatisfaction: <input type="number" name="jobsat"></br></br> 
-            MaritalStatus: <input type="text" name="maristatus"></br></br> 
-            MonthlyIncome: <input type="number" name="moninc"></br></br> 
-            MonthlyRate: <input type="number" name="monrat"></br></br> 
-            NumCompaniesWorked: <input type="number" name="numcomp"></br></br> 	
-            Over18: <input type="text" name="over18"></br></br> 
-            OverTime: <input type="text" name="overtime"></br></br> 	
-            PercentSalaryHike: <input type="number" name="persalhike"></br></br> 	
-            PerformanceRating: <input type="number" name="perrat"></br></br> 	
-            RelationshipSatisfaction: <input type="number" name="relsat"></br></br> 	
-            StandardHours: <input type="number" name="stahrs"></br></br> 	
-            StockOptionLevel: <input type="number" name="stopt"></br></br> 
-            TotalWorkingYears: <input type="number" name="twkhrs"></br></br> 
-            TrainingTimesLastYear: <input type="number" name="tratim"></br></br> 	
-            WorkLifeBalance: <input type="number" name="wrklifbal"></br></br> 
-            YearsAtCompany: <input type="number" name="yrsatcomp"></br></br> 
-            YearsInCurrentRole: <input type="number" name="yrsincurrole"></br></br> 
-            YearsSinceLastPromotion: <input type="number" name="yrssinlasprom"></br></br> 	
-            YearsWithCurrManager: <input type="number" name="yrswitcurman"></br></br> 
+            Age: <input  type="number" placeholder="18-80" name="age"></br></br>
+            BusinessTravel:	 <input type="radio" name="bt" id="Rarely" value="Rarely">Rarely  <input type="radio" name="bt" id="Frequently" value="Frequently">  Frequently<input type="radio" name="bt" id="No Travel"  value="No Travel">No Travel<br><br>
+            DailyRate:	<input  type="number" placeholder="100-1600" name="dr"></br></br>
+            Department:	<input type="radio" name="dept" id="Research & Development" value="Research & Development">Research & Development  <input type="radio" name="dept" id="Human Resources" value="Human Resources">Human Resources  <input type="radio" name="dept" id="Sales"  value="Sales">Sales<br><br>
+            DistanceFromHome: <input  type="number" placeholder="1-29" name="dfh"></br></br>
+            Education: <input  type="number" placeholder="1-5" name="edu"></br></br>
+            EducationField:	<input type="radio" name="eduf" id="Life Sciences" value="Life Sciences">Life Sciences  <input type="radio" name="eduf" id="Medical" value="Medical">Medical  <input type="radio" name="eduf" id="Marketing"  value="Marketing">Marketing  <input type="radio" name="eduf" id="Technical Degree"  value="Technical Degree">Technical Degree  <input type="radio" name="eduf" id="Human Resources"  value="Human Resources">Human Resources  <input type="radio" name="eduf" id="Other"  value="Other">Other  <br><br>
+            EnvironmentSatisfaction: <input type="number" placeholder="1-4" name="envsat"></br></br>
+            Gender: <input type="radio" name="gender" id="Male" value="Male">Male  <input type="radio" name="gender" id="Female" value="Female">Female<br><br>
+            HourlyRate: <input type="number" placeholder="30-100" name="hr"></br></br>
+            JobInvolvement: <input type="number" placeholder="1-4" name="jobinv"></br></br>
+            JobLevel: <input type="number" placeholder="1-5" name="joblev"></br></br>
+            JobRole: <input type="radio" name="jobrol" id="Sales Executive" value="Sales Executives">Sales Executive  <input type="radio" name="jobrol" id="Research Scientist" value="Research Scientist">Research Scientist  <input type="radio" name="jobrol" id="Laboratory Technician"  value="Laboratory Technician">Laboratory Technician  <input type="radio" name="jobrol" id="Manufacturing Director"  value="Manufacturing Director">Manufacturing Director  <input type="radio" name="jobrol" id="Healthcare Representative"  value="Healthcare Representative">Healthcare Representative  <input type="radio" name="jobrol" id="Manager" value="Manager">Manager  <input type="radio" name="jobrol" id="Sales Representative" value="Sales Representative">Sales Representative  <input type="radio" name="jobrol" id="Research Director" value="Research Director">Research Director  <input type="radio" name="jobrol" id="Human Resource" value="Human Resources">Human Resources  <br><br>
+            JobSatisfaction: <input type="number" placeholder="1-4" name="jobsat"></br></br> 
+            MaritalStatus: <input type="radio" name="maristatus" id="Married" value="Married">Married  <input type="radio" name="maristatus" id="Single" value="Single">Single  <input type="radio" name="maristatus" id="Divorced" value="Divorced">Divorced<br><br> 
+            MonthlyIncome: <input type="number" placeholder="1000-20000" name="moninc"></br></br> 
+            NumCompaniesWorked: <input type="number" placeholder="0-9" name="numcomp"></br></br> 
+            OverTime: <input type="radio" name="overtime" id="Yes" value="Yes">Yes  <input type="radio" name="overtime" id="No" value="No">No<br><br> 		
+            PerformanceRating: <input type="number" placeholder="1-4" name="perrat"></br></br> 	
+            RelationshipSatisfaction: <input type="number" placeholder="1-4" name="relsat"></br></br> 	
+            StockOptionLevel: <input type="number" placeholder="0-3" name="stopt"></br></br> 
+            TotalWorkingYears: <input type="number" placeholder="0-40" name="twkhrs"></br></br> 
+            TrainingTimesLastYear: <input type="number" placeholder="0-6" name="tratim"></br></br> 	
+            WorkLifeBalance: <input type="number" placeholder="1-4" name="wrklifbal"></br></br> 
+            YearsAtCompany: <input type="number" placeholder="0-40" name="yrsatcomp"></br></br> 
+            YearsInCurrentRole: <input type="number" placeholder="0-18" name="yrsincurrole"></br></br> 
+            YearsSinceLastPromotion: <input type="number" placeholder="0-15" name="yrssinlasprom"></br></br> 	
+            YearsWithCurrManager: <input type="number" placeholder="0-17" name="yrswitcurman"></br></br> 
             <button>Predict</button>
         </form>
     </body>
